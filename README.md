@@ -22,9 +22,12 @@
 ### 其他指令
 | 目標 | 指令 | 說明 |
 | --- | --- | --- |
-| 匯入數據 | pd.read_csv(`url`, sep = `'\t'`) ||
+| 匯入數據 | pd.read_csv(`url`, sep = `'\t'`, index_col = `欄名稱`) | index_col可以指定欄為index|
+| 重新採樣<br/>(加總合併) | resample(`時間`).sum()|時間參考寫法：AS(年初)、10AS(十年)、MS(每月開始)、QS(每季度開始)、YS(每年開始)、W(每周)、D(每天)、H(每小時)|
+| 刪除欄 | del `dataset`[`欄名稱`]||
 | 取頭尾 | head() <br/> tail()||
 | 取資訊 | info()||
+| 轉換時間格式 | pd.to_datetime(`dataset.欄名稱`, format='%Y')| %Y指年份|
 || describe() ||
 || dtype | 顯示格式 |
 || columns | 顯示所有欄名稱 |
@@ -36,3 +39,4 @@
 || nunique()|統計不重複數量|
 || value_counts()|統計不同項目的分別數量|
 || sort_values([`計算的欄位`], ascending = `False`) | value_counts()並排序|
+|| idxmax(0) | 尋找每行最大值對應的index |
