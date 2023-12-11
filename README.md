@@ -25,14 +25,14 @@
 | 匯入數據 | pd.read_csv(`url`, sep = `'\t'`, index_col = `欄名稱`) | index_col可以指定欄為index|
 | 重新採樣<br/>(加總合併) | resample(`時間`).sum()|時間參考寫法：AS(年初)、10AS(十年)、MS(每月開始)、QS(每季度開始)、YS(每年開始)、W(每周)、D(每天)、H(每小時)|
 | 刪除欄 | del `dataset`[`欄名稱`]||
-| 取頭尾 | head() <br/> tail()||
+| 轉換格式(時間) | pd.to_datetime(`dataset.欄名稱`, format='%Y')| %Y指年份|
 | 取資訊 | info()||
-| 轉換時間格式 | pd.to_datetime(`dataset.欄名稱`, format='%Y')| %Y指年份|
 || describe() ||
 || dtype | 顯示格式 |
 || columns | 顯示所有欄名稱 |
 || index | 顯示所有index名稱 |
 || [`指定欄的名稱`] ||
+|| head() <br/> tail()| 取頭尾 |
 | 群組 | groupby(`欄位名稱`)||
 | 計算 | sum()||
 || count() |統計數量|
