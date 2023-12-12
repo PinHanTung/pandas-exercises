@@ -32,7 +32,7 @@
 || type(`DataFrame名稱`) | 確認格式是否為dataframe |
 || columns | 顯示所有欄名稱 |
 || index | 顯示所有index名稱 |
-|| [`指定欄的名稱`] ||
+|| [`指定欄的名稱`] | 選取欄，如果沒有該欄則會新增欄|
 || head() <br/> tail()| 取頭尾 |
 | 刪減 | del `dataset`[`欄名稱`]| 刪除欄|
 || pd.caoncat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併|
