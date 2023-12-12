@@ -44,7 +44,7 @@
 || nunique()|統計不重複數量|
 || value_counts()|統計不同項目的分別數量|
 || sort_values([`計算的欄位`], ascending = `False`) | 依照某欄的值進行排序|
-|| idxmax(0) | 尋找每行最大值對應的index |
+|| idxmax(0)<br/> idxmin | 尋找每行最大最小值對應的index |
 | 應用 | value_counts().count() | 計算該欄不同值的數量 |
 || len(groupby(`column`).sum())| 計算該欄不同值的數量 |
 <br/>
