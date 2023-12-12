@@ -6,6 +6,7 @@
 | --- | --- | --- |
 | 其他 | git clone `xxx`<br/>git status||
 | 加入索引 | git add `檔案名稱`<br/>git add .|加入單一檔案(推薦)<br/>加入全部檔案|
+| 取消索引 | git reset `檔案名稱` ||
 | 提交版本(給本地數據庫) | git commit -m "`備註說明`" ||
 | 上傳遠端數據庫 | git push ||
 | 下載遠端數據庫 | git pull||
