@@ -24,7 +24,7 @@
 | --- | --- | --- |
 | 匯入數據 | pd.read_csv(`url`, sep = `'\t'`, index_col = `欄名稱`) | index_col可以指定欄為index|
 | 重新採樣<br/>(加總合併) | resample(`時間`).sum()|時間參考寫法：AS(年初)、10AS(十年)、MS(每月開始)、QS(每季度開始)、YS(每年開始)、W(每周)、D(每天)、H(每小時)|
-| 轉換格式(時間) | pd.to_datetime(`dataset.欄名稱`, format='%Y')| %Y指年份|
+| 轉換格式(時間) | pd.to_datetime(`DataFrame.欄名稱`, format='%Y')| %Y指年份|
 | 取資訊 | info()||
 || describe() ||
 || shape ||
@@ -35,9 +35,9 @@
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
 || head() <br/> tail()| 取頭尾 |
 | 增減 | del `DataFrame`[`欄名稱`]| 刪除欄|
-|| [`欄的名稱`] | 選取欄，如果沒有該欄則會新增欄|
+|| [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
 || pd.caoncat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併|
-| 群組 | groupby(`欄位名稱`)||
+| 群組 | groupby(`欄名稱`)||
 | 計算 | sum()||
 || count() |統計數量|
 || nunique()|統計不重複數量|
