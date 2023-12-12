@@ -30,6 +30,7 @@
 || describe() ||
 || shape ||
 || dtype | 顯示格式 |
+|| type(`DataFrame名稱`) | 確認格式是否為dataframe |
 || columns | 顯示所有欄名稱 |
 || index | 顯示所有index名稱 |
 || [`指定欄的名稱`] ||
