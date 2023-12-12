@@ -28,6 +28,7 @@
 | 轉換格式(時間) | pd.to_datetime(`dataset.欄名稱`, format='%Y')| %Y指年份|
 | 取資訊 | info()||
 || describe() ||
+|| shape ||
 || dtype | 顯示格式 |
 || columns | 顯示所有欄名稱 |
 || index | 顯示所有index名稱 |
