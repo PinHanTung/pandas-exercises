@@ -44,8 +44,8 @@
 || value_counts()|統計不同項目的分別數量|
 || sort_values([`計算的欄位`], ascending = `False`) | value_counts()並排序|
 || idxmax(0) | 尋找每行最大值對應的index |
-
 <br/>
+
 ## 3. Numpy 參考寫法
 ### 有時會和 pandas 一起用
 | 目標 | 指令 | 說明 |
