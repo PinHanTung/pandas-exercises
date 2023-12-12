@@ -43,3 +43,9 @@
 || value_counts()|統計不同項目的分別數量|
 || sort_values([`計算的欄位`], ascending = `False`) | value_counts()並排序|
 || idxmax(0) | 尋找每行最大值對應的index |
+
+
+## 3. Numpy 參考寫法
+### 有時會和 pandas 一起用
+| 目標 | 指令 | 說明 |
+|| random.randint(low, high=None, size=None, dtype=int) | 在某個區間值，選擇需要 size 的隨機值|
