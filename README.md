@@ -26,7 +26,7 @@
 | 重新採樣<br/>(加總合併) | resample(`時間`).sum()|時間參考寫法：AS(年初)、10AS(十年)、MS(每月開始)、QS(每季度開始)、YS(每年開始)、W(每周)、D(每天)、H(每小時)|
 | 轉換格式(時間) | pd.to_datetime(`DataFrame.欄名稱`, format='%Y')| %Y指年份|
 | 取資訊 | info()| 每欄名稱、數量、格式|
-|| describe() ||
+|| describe() | mean、std、min、max、quartiles |
 || shape ||
 || dtype | 顯示格式 |
 || type(`DataFrame名稱`) | 確認格式是否為dataframe |
@@ -44,6 +44,7 @@
 || nunique()|統計不重複數量|
 || value_counts()|統計不同項目的分別數量|
 || sort_values([`計算的欄位`], ascending = `False`) | 依照某欄的值進行排序|
+|| std() | 標準差 |
 || idxmax(0)<br/> idxmin | 尋找每行最大最小值對應的index |
 | 應用 | value_counts().count() | 計算該欄不同值的數量 |
 || len(groupby(`column`).sum())| 計算該欄不同值的數量 |
