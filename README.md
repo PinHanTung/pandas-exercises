@@ -70,10 +70,11 @@
 ### 包含 matplotlib.pyplot & seaborn
 | 目標 | 指令 | 說明 |
 | --- | --- | --- |
-|| `df`[`column`].plot(kind='bar') | 使用`column`數據新增圖 |
+| 新增圖1 | `df`[`column`].plot(kind='bar') | 使用`column`數據新增圖 |
 || plt.xlabel(`x軸文字`)<br/> plt.ylabel(`y軸文字`)<br/> plt.title('`標題`')| 圖的文字設定 |
 || plt.show() | 顯示圖片 |
-|| sns.FacetGrid(`df`, col=`column`) | 使用`df`數據、按照`column`不同值為主題，產生多個空的圖面 |
+| 新增圖2| sns.FacetGrid(`df`, col=`column`) | 使用`df`數據、按照`column`不同值為主題，產生多個空的圖面 |
 || map(`plt.scatter`,`column_x`,`column_y`,alpha=1)| 為空的圖面填入值，`plt.scatter`為圖形類型，此為散點圖；設定xy值需要的欄，alpha=1為點的透明度|
 || add_legend() | 在圖的旁邊新增圖例 |
+|| plt.show() | 顯示圖片 |
 
