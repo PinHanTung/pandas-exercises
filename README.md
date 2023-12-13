@@ -44,6 +44,7 @@
 || pd.caoncat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併|
 | 篩選 | loc[:,[`df1`,`df2`]] | 複數columns需要一個[]包起來 |
 || [1:11] | 選取2-11列 |
+||`df`[`column`].isin(`要篩選的值`) | 在`column`篩選特定值，複數值用[]包起來 |
 | 群組 | groupby(`欄名稱`)| `欄名稱`會變成新的 index|
 | 計算 | sum()||
 || count() |統計數量|
@@ -54,7 +55,7 @@
 || idxmax(0)<br/> idxmin | 尋找每行最大最小值對應的index |
 | 應用 | value_counts().count() | 計算該欄不同值的數量 |
 || len(groupby(`column`).sum())| 計算該欄不同值的數量 |
-|| `df`.index.get_level_values(`index排序或index的名稱`) | 獲取第二個index的全部值(使用groupby後可能有不只一個index)|
+|| `df`.index.get_level_values(`index排序或index的名稱`) | 獲取某個index的全部值(使用groupby後可能有不只一個index)|
 <br/>
 
 ## 3. Numpy 參考寫法
