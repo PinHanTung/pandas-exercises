@@ -16,11 +16,11 @@
 ### 寫在最前面
 | 目標 | 指令 | 說明 |
 | --- | --- | --- |
-|| import numpy as np ||
-|| import pandas as pd ||
+| np | import numpy as np ||
+| pd | import pandas as pd ||
 || pd.set_option('display.max_columns', None) | 顯示完整的欄位資訊 |
-|| import matplotlib.pyplot as plt | 繪圖使用 |
-|| import seaborn as sns | 繪圖使用(進階) |
+| plt | import matplotlib.pyplot as plt | 繪圖使用 |
+| sns | import seaborn as sns | 繪圖使用(進階) |
 
 
 ### 其他指令
@@ -70,7 +70,8 @@
 ### 包含 matplotlib.pyplot & seaborn
 | 目標 | 指令 | 說明 |
 | --- | --- | --- |
-|| plot(kind='bar') | 新增圖 |
+|| `df`[`column`].plot(kind='bar') | 使用`column`數據新增圖 |
 || plt.xlabel(`x軸文字`)<br/> plt.ylabel(`y軸文字`)<br/> plt.title('`標題`')| 圖的文字設定 |
 || plt.show() | 顯示圖片 |
+|| sns.FacetGrid(`df`, col=`column`) | 使用`df`數據、按照`column`不同值為主題，產生多個圖 |
 
