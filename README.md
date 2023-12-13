@@ -19,6 +19,9 @@
 || import numpy as np ||
 || import pandas as pd ||
 || pd.set_option('display.max_columns', None) | 顯示完整的欄位資訊 |
+|| import matplotlib.pyplot as plt | 繪圖使用 |
+|| import seaborn as sns | 繪圖使用(進階) |
+
 
 ### 其他指令
 | 目標 | 指令 | 說明 |
@@ -57,4 +60,15 @@
 ### 有時會和 pandas 一起用
 | 目標 | 指令 | 說明 |
 | --- | --- | --- |
+|| import numpy as np ||
 || np.random.randint(low, high=None, size=None, dtype=int) | 在某個區間值，選擇需要 size 的隨機值|
+<br/>
+
+## 4. 繪圖 參考寫法
+### 包含 matplotlib.pyplot & seaborn
+| 目標 | 指令 | 說明 |
+| --- | --- | --- |
+|| plot(kind='bar') | 新增圖 |
+|| plt.xlabel(`x軸文字`)<br/> plt.ylabel(`y軸文字`)<br/> plt.title('`標題`')| 圖的文字設定 |
+|| plt.show() | 顯示圖片 |
+
