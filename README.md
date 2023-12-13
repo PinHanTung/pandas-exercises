@@ -54,6 +54,7 @@
 || idxmax(0)<br/> idxmin | 尋找每行最大最小值對應的index |
 | 應用 | value_counts().count() | 計算該欄不同值的數量 |
 || len(groupby(`column`).sum())| 計算該欄不同值的數量 |
+|| `df`.index.get_level_values(`index排序或index的名稱`) | 獲取第二個index的全部值(使用groupby後可能有不只一個index)|
 <br/>
 
 ## 3. Numpy 參考寫法
