@@ -39,6 +39,8 @@
 || drop([columns1, columns2], axis = 1) | 刪除欄(可一次多個)|
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
 || pd.caoncat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併|
+| 篩選 | loc[:,[`df1`,`df2`]] | 複數columns需要一個[]包起來 |
+|| [1:11] | 選取2-11列 |
 | 群組 | groupby(`欄名稱`)| `欄名稱`會變成新的 index|
 | 計算 | sum()||
 || count() |統計數量|
