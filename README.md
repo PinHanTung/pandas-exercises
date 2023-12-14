@@ -54,7 +54,6 @@
 | 重新採樣 | `df`.resample(`10AS`).sum()| 十年總和，A為年、S為開頭 <br/> [時間參考寫法](<https://blog.csdn.net/qq_44285092/article/details/117638171>)：10AS(十年)、BM(每月最後一個工作天)、MS(每月開始)、QS(每季度開始)、AS(每年開始)、YS(每年開始)、W(每周)、D(每天)、H(每小時)|
 || `df`.resample(`BM`).mean() | 每月最後一天為區間，取平均值，B為工作、M為月|
 | 群組 | groupby(`欄名稱`)| `欄名稱`會變成新的 index|
-|| `df`.resample(`'BM'`).mean() | 以時間區間合併|
 | 計算 | sum()||
 || count() |統計數量|
 || nunique()|統計不重複數量|
@@ -64,6 +63,7 @@
 | 應用 | value_counts().count() | 計算該欄不同值的數量 |
 || len(groupby(`column`).sum())| 計算該欄不同值的數量 |
 || `df`.index.get_level_values(`index排序或index的名稱`) | 獲取某個index的全部值(使用groupby後可能有不只一個index)|
+|| `df2` = `df1`.resample(`'BM'`).mean() <br/> len(`df2`.index) | 計算月數(透過日期重新取樣)|
 <br/>
 
 ## 3. Numpy 參考寫法
