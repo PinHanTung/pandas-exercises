@@ -39,10 +39,11 @@
 || index | 顯示所有index名稱 |
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
 || head() <br/> tail()| 取頭尾 |
-| 增減 | del `DataFrame`[`欄名稱`]| 刪除欄|
+| 增減與排列 | del `DataFrame`[`欄名稱`]| 刪除欄|
 || drop([columns1, columns2], axis = 1) | 刪除欄(可一次多個)|
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
 || pd.caoncat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併|
+|| `df`=`df`[[col1,col2,col3]] | 指定欄位排列順序 |
 | 篩選 | loc[:,[`df1`,`df2`]] | 複數columns需要一個[]包起來 |
 || `df`[1:11] | 選取2-11列 |
 ||`df`[`column`].isin(`要篩選的值`) | 在`column`篩選特定值，複數值用[]包起來 |
