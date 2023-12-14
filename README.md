@@ -31,7 +31,7 @@
 | 取資訊 | info()| 每欄名稱、數量、格式|
 || describe() | mean、std、min、max、quartiles |
 || shape ||
-|| dtypes | 顯示格式 |
+|| dtypes | 顯示格式，前面可以是df或col |
 || type(`DataFrame名稱`) | 確認格式是否為dataframe |
 || columns | 顯示所有欄名稱 |
 || index | 顯示所有index名稱 |
