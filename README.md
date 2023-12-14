@@ -63,7 +63,7 @@
 | 應用 | value_counts().count() | 計算該欄不同值的數量 |
 || len(groupby(`column`).sum())| 計算該欄不同值的數量 |
 || `df`.index.get_level_values(`index排序或index的名稱`) | 獲取某個index的全部值(使用groupby後可能有不只一個index)|
-|| `df2` = `df1`.resample(`'BM'`).mean() <br/> len(`df2`.index) | 計算月數(透過日期重新取樣)|
+|| `df2` = `df1`.resample(`'BM'`).mean() <br/> len(`df2`.index) | 計算月數(透過日期重新取樣) |
 <br/>
 
 ## 3. Numpy 參考寫法
