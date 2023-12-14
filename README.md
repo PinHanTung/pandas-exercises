@@ -28,15 +28,15 @@
 | --- | --- | --- |
 | 匯入數據 | pd.read_csv(`url`, sep = `'\t'`, index_col = `欄名稱`) | 從csv匯入數據，index_col可以指定欄為index|
 || pd.DataFrame(`字典名`) | 從字典的數據轉為df |
-| 取資訊 | info()| 每欄名稱、數量、格式|
-|| describe() | mean、std、min、max、quartiles |
-|| shape ||
+| 取資訊 | info()| 顯示每欄名稱、數量、格式|
+|| describe() | 顯示mean、std、min、max、quartiles |
+|| shape | 顯示行列數量 |
 || dtypes | 顯示格式，前面可以是df或col |
-|| type(`DataFrame名稱`) | 確認格式是否為dataframe |
 || columns | 顯示所有欄名稱 |
 || index | 顯示所有index名稱 |
-|| [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
 || head() <br/> tail()| 取頭尾 |
+|| type(`DataFrame名稱`) | 確認格式是否為dataframe |
+|| index.is_unique | 確認index是否有重複 |
 | 增減與排列 | del `DataFrame`[`欄名稱`]| 刪除欄，這裡不能使用df.col格式|
 || drop([columns1, columns2], axis = 1) | 刪除欄(可一次多個)|
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
