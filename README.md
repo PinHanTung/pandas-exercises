@@ -41,9 +41,11 @@
 || drop([columns1, columns2], axis = 1) | 刪除欄(可一次多個)|
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
 || pd.caoncat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併|
-|| `df`=`df`[[col1,col2,col3]] | 指定欄位排列順序 |
+|| `df`=`df`[[col1,col2,col3]] | 指定欄位順序 |
 || `df`= `df`.set_index(`col`)| 指定某欄為index(col不會保留)|
 || `df`.index = `df.col` | 指定某欄為index(col會保留)|
+|| sort_values([`column`], ascending = `False`) | 依照某欄的值進行排序|
+|| sort_index([`column`], ascending = `False`) | 依照index的值進行排序|
 | 重新採樣<br/>(加總合併) | resample(`時間`).sum()|時間參考寫法：AS(年初)、10AS(十年)、MS(每月開始)、QS(每季度開始)、YS(每年開始)、W(每周)、D(每天)、H(每小時)|
 | 轉換格式(時間) | pd.to_datetime(`DataFrame.欄名稱`, format='%Y')| %Y指年份|
 | 篩選 | loc[:,[`df1`,`df2`]] | 複數columns需要一個[]包起來 |
@@ -54,7 +56,6 @@
 || count() |統計數量|
 || nunique()|統計不重複數量|
 || value_counts()|統計不同項目的分別數量|
-|| sort_values([`column`], ascending = `False`) | 依照某欄的值進行排序|
 || std() | 標準差 |
 || idxmax(0)<br/> idxmin | 尋找每行最大最小值對應的index |
 | 應用 | value_counts().count() | 計算該欄不同值的數量 |
