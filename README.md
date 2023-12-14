@@ -37,11 +37,12 @@
 || index | 顯示所有index名稱 |
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
 || head() <br/> tail()| 取頭尾 |
-| 增減與排列 | del `DataFrame`[`欄名稱`]| 刪除欄|
+| 增減與排列 | del `DataFrame`[`欄名稱`]| 刪除欄，這裡不能使用df.col格式|
 || drop([columns1, columns2], axis = 1) | 刪除欄(可一次多個)|
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
 || pd.caoncat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併|
 || `df`=`df`[[col1,col2,col3]] | 指定欄位排列順序 |
+|| `df`.index = `df.col` | 指定某欄為index(col也會保留)|
 | 重新採樣<br/>(加總合併) | resample(`時間`).sum()|時間參考寫法：AS(年初)、10AS(十年)、MS(每月開始)、QS(每季度開始)、YS(每年開始)、W(每周)、D(每天)、H(每小時)|
 | 轉換格式(時間) | pd.to_datetime(`DataFrame.欄名稱`, format='%Y')| %Y指年份|
 | 篩選 | loc[:,[`df1`,`df2`]] | 複數columns需要一個[]包起來 |
