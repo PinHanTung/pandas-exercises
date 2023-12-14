@@ -46,7 +46,8 @@
 || `df`.index = `df.col` | 指定某欄為index(col會保留)|
 || sort_values([`column`], ascending = `False`) | 依照某欄的值進行排序|
 || sort_index([`column`], ascending = `False`) | 依照index的值進行排序|
-| 重新採樣<br/>(加總合併) | resample(`時間`).sum()|[時間參考寫法](<https://blog.csdn.net/qq_44285092/article/details/117638171>)：10AS(十年)、BM(每月最後一個工作天)、MS(每月開始)、QS(每季度開始)、AS(每年開始)、YS(每年開始)、W(每周)、D(每天)、H(每小時)|
+| 重新採樣 | `df`.resample(`10AS`).sum()| 十年總和，A為年、S為開頭 <br/> [時間參考寫法](<https://blog.csdn.net/qq_44285092/article/details/117638171>)：10AS(十年)、BM(每月最後一個工作天)、MS(每月開始)、QS(每季度開始)、AS(每年開始)、YS(每年開始)、W(每周)、D(每天)、H(每小時)|
+|| `df`.resample(`BM`).mean() | 每月最後一天為區間，取平均值，B為工作、M為月|
 | 轉換格式(時間) | pd.to_datetime(`DataFrame.欄名稱`, format='%Y')| %Y指年份|
 | 篩選 | loc[:,[`df1`,`df2`]] | 複數columns需要一個[]包起來 |
 || `df`[1:11] | 選取2-11列 |
