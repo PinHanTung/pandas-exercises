@@ -28,8 +28,6 @@
 | --- | --- | --- |
 | 匯入數據 | pd.read_csv(`url`, sep = `'\t'`, index_col = `欄名稱`) | 從csv匯入數據，index_col可以指定欄為index|
 || pd.DataFrame(`字典名`) | 從字典的數據轉為df |
-| 重新採樣<br/>(加總合併) | resample(`時間`).sum()|時間參考寫法：AS(年初)、10AS(十年)、MS(每月開始)、QS(每季度開始)、YS(每年開始)、W(每周)、D(每天)、H(每小時)|
-| 轉換格式(時間) | pd.to_datetime(`DataFrame.欄名稱`, format='%Y')| %Y指年份|
 | 取資訊 | info()| 每欄名稱、數量、格式|
 || describe() | mean、std、min、max、quartiles |
 || shape ||
@@ -44,6 +42,8 @@
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
 || pd.caoncat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併|
 || `df`=`df`[[col1,col2,col3]] | 指定欄位排列順序 |
+| 重新採樣<br/>(加總合併) | resample(`時間`).sum()|時間參考寫法：AS(年初)、10AS(十年)、MS(每月開始)、QS(每季度開始)、YS(每年開始)、W(每周)、D(每天)、H(每小時)|
+| 轉換格式(時間) | pd.to_datetime(`DataFrame.欄名稱`, format='%Y')| %Y指年份|
 | 篩選 | loc[:,[`df1`,`df2`]] | 複數columns需要一個[]包起來 |
 || `df`[1:11] | 選取2-11列 |
 ||`df`[`column`].isin(`要篩選的值`) | 在`column`篩選特定值，複數值用[]包起來 |
