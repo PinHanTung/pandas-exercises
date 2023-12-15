@@ -42,6 +42,7 @@
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
 || pd.caoncat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併|
 || `df`=`df`[[col1,col2,col3]] | 指定欄位順序 |
+|| `df`.columns= [col1,col2,col3] | 指定欄位名稱(取代原本名稱)|
 || `df`= `df`.set_index(`col`)| 指定某欄為index(col不會保留)|
 || `df`.index = `df.col` | 指定某欄為index(col會保留)|
 || sort_values([`column`], ascending = `False`) | 依照某欄的值進行排序|
