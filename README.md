@@ -78,8 +78,10 @@
 ### 包含 matplotlib.pyplot & seaborn
 | 目標 | 指令 | 說明 |
 | --- | --- | --- |
-| 新增圖1 | `df`[`column`].plot(kind='bar') | 使用`column`數據新增圖 |
+| plt設定 | `df`[`column`].plot(kind=`'bar'`,x=`x軸文字`,y=`y軸文字`,title=`名稱`,figsize=(`6,8`) | 使用`column`數據新增圖，[種類參考](<https://yanwei-liu.medium.com/python-%E8%B3%87%E6%96%99%E8%99%95%E7%90%86%E7%AD%86%E8%A8%98-%E4%BA%8C-%E8%A9%A6%E8%A9%A6%E7%9C%8Bseaborn%E5%90%A7-bf9fecdc1905>) |
 || plt.xlabel(`x軸文字`)<br/> plt.ylabel(`y軸文字`)<br/> plt.title('`標題`')| 圖的文字設定 |
+|| set_size_inches(13.5,9) | 設定圖片尺寸 |
+| plt存檔與顯示 | fig=`df`.plot().get_figure() <br/> fig.savefig(`figure.png`) | 取得圖片 <br/> 保存成png |
 || plt.show() | 顯示圖片 |
 | 新增圖2| sns.FacetGrid(`df`, col=`column`) | 使用`df`數據、按照`column`不同值為主題，產生多個空的圖面 |
 || map(`plt.scatter`,`column_x`,`column_y`,alpha=1)| 為空的圖面填入值，`plt.scatter`為圖形類型，此為散點圖；設定xy值需要的欄，alpha=1為點的透明度|
