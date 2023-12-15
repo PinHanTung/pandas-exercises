@@ -55,9 +55,11 @@
 ||`df`[`column`].isin(`要篩選的值`) | 在`column`篩選特定值，複數值用[]包起來 |
 | 重新採樣 | `df`.resample(`10AS`).sum()| 十年總和，A為年、S為開頭 <br/> [時間參考寫法](<https://blog.csdn.net/qq_44285092/article/details/117638171>)：10AS(十年)、BM(每月最後一個工作天)、MS(每月開始)、QS(每季度開始)、AS(每年開始)、YS(每年開始)、W(每周)、D(每天)、H(每小時)|
 || `df`.resample(`BM`).mean() | 每月最後一天為區間，取平均值，B為工作、M為月|
-| 修改值 | `df`.iloc[`10:30,2:3`]=np.nan | 指定某些格子為NaN(非數值) |
+|| `df`.reset_index(drop=True)| 重置df，原本index改為col，drop=True會棄掉原本index|
+| 空值 | `df`.iloc[`10:30,2:3`]=np.nan | 指定某些格子為NaN(非數值) |
 || `df`.`col`.fillna(`1`, inplace = True)| 為某欄空值補值 <br/> [補資料的方式](<https://medium.com/@zector1030/pandas-fillna-%E7%AF%84%E4%BE%8B-5d33819fb7b8>)|
-| 群組 | groupby(`欄名稱`)| `欄名稱`會變成新的 index|
+|| `df`.dropna(how=`any`) | 刪除空值的該行或列，any只要有一個空值，all全部為空值|
+| 群組 | groupby(`欄名稱`) | `欄名稱`會變成新的 index|
 | 計算 | sum()||
 || count() |統計數量|
 || nunique()|統計不重複數量|
