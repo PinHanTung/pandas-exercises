@@ -83,7 +83,7 @@
 || set_size_inches(13.5,9) | 設定圖片尺寸 |
 | plt存檔與顯示 | fig=`df`.plot().get_figure() <br/> fig.savefig(`figure.png`) | 取得圖片 <br/> 保存成png |
 || plt.show() | 顯示圖片 |
-| 新增圖2| sns.FacetGrid(`df`, col=`column`) | 使用`df`數據、按照`column`不同值為主題，產生多個空的圖面 |
+| sns設定 | sns.FacetGrid(`df`, col=`column`) | 使用`df`數據、按照`column`不同值為主題，產生多個空的圖面 |
 || map(`plt.scatter`,`column_x`,`column_y`,alpha=1)| 為空的圖面填入值，`plt.scatter`為圖形類型，此為散點圖；設定xy值需要的欄，alpha=1為點的透明度|
 || add_legend() | 在圖的旁邊新增圖例 |
 || plt.show() | 顯示圖片 |
