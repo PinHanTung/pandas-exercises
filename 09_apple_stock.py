@@ -51,5 +51,5 @@ print((apple.index.max()-apple.index.min()).days)
 # step 11.
 # How many months in the data we have?
 # 
-apple_month = apple.resample('BM')
+apple_month = apple.resample('BM').mean()
 print(len(apple_month.index))
