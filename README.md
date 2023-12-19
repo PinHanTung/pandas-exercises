@@ -88,6 +88,8 @@
 || plt.xlabel(`x軸文字`)<br/> plt.ylabel(`y軸文字`)<br/> plt.title('`標題`')| 圖的文字設定 |
 || set_size_inches(13.5,9) | 設定圖片尺寸 |
 | plt存檔與顯示 | fig=`df`.plot().get_figure() <br/> fig.savefig(`figure.png`) | 取得圖片 <br/> 保存成png |
+|| plt.scatter(`x`,`y`,c=`label`,cmap=`Dark2`)| 繪製散佈圖，並依照label給不同顏色|
+|| plt.grid() | 顯示網格 |
 || plt.show() | 顯示圖片 |
 | sns設定 | sns.FacetGrid(`df`, col=`column`) | 使用`df`數據、按照`column`不同值為主題，產生多個空的圖面 |
 || map(`plt.scatter`,`column_x`,`column_y`,alpha=1)| 為空的圖面填入值，`plt.scatter`為圖形類型，此為散點圖；設定xy值需要的欄，alpha=1為點的透明度|
