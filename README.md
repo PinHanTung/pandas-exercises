@@ -37,7 +37,7 @@
 || head() <br/> tail()| 取頭尾 |
 || type(`DataFrame名稱`) | 確認格式是否為dataframe |
 || index.is_unique | 確認index是否有重複 |
-|| pd.isnull(`df`).sum() | 確認各欄是否有空值 |
+|| pd.isnull(`df`).sum() | 確認各欄是否有NA<br/>如想包含空值，可設定：pandas.options.mode.use_inf_as_na = True |
 | 增減與排列 | del `DataFrame`[`欄名稱`]| 刪除欄，這裡不能使用df.col格式|
 || drop([columns1, columns2], axis = 1) | 刪除欄(可一次多個)|
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
