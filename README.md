@@ -19,6 +19,7 @@
 | np | import numpy as np ||
 | pd | import pandas as pd ||
 || pd.set_option('display.max_columns', None) | 顯示完整的欄位資訊 |
+|| pd.options.mode.use_inf_as_na = True| 將空值視為NA|
 | plt | import matplotlib.pyplot as plt | 繪圖使用 |
 | sns | import seaborn as sns | 繪圖使用(進階) |
 
