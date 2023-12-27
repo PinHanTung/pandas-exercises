@@ -27,7 +27,7 @@
 ### 其他指令
 | 目標 | 指令 | 說明 |
 | --- | --- | --- |
-| 匯入數據 | pd.read_csv(`url`, sep = `'\t'`, index_col = `欄名稱`) | 從csv匯入數據，index_col可以指定欄為index|
+| 匯入數據 | pd.read_csv(`url`, sep = `'\t'`, index_col = `欄名稱`) | 從csv匯入數據，index_col可以指定欄為index；若為本地path，可以在前面寫r，來反斜線|
 || pd.DataFrame(`字典名`) | 從字典的數據轉為df |
 | 取資訊 | info()| 顯示每欄名稱、數量、格式|
 || describe() | 顯示mean、std、min、max、quartiles |
