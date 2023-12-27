@@ -42,15 +42,16 @@
 | 增減與排列 | del `DataFrame`[`欄名稱`]| 刪除欄，這裡不能使用df.col格式|
 || drop([columns1, columns2], axis = 1) | 刪除欄(可一次多個)|
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
-|| pd.caoncat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併|
+|| pd.caoncat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併，1為左右合併|
 || `df`=`df`[[col1,col2,col3]] | 指定欄位順序 |
 || `df`.columns= [col1,col2,col3] | 指定欄位名稱(取代原本名稱)|
 || `df`= `df`.set_index(`col`)| 指定某欄為index(col不會保留)|
 || `df`.index = `df.col` | 指定某欄為index(col會保留)|
 || sort_values([`column`], ascending = `False`) | 依照某欄的值進行排序|
 || sort_index([`column`], ascending = `False`) | 依照index的值進行排序|
-| 轉換格式(時間) | pd.to_datetime(`DataFrame.欄名稱`, format='%Y')| %Y指年份|
+| 轉換格式 | pd.to_datetime(`DataFrame.欄名稱`, format='%Y')| %Y指年份|
 || days | 以日為單位 |
+||pd.DataFrame(`list`,columns=['命名'])||
 | 篩選 | loc[:,[`df1`,`df2`]] | 複數columns需要一個[]包起來 |
 || `df`[1:11] | 選取2-11列 |
 ||`df`[`column`].isin(`要篩選的值`) | 在`column`篩選特定值，複數值用[]包起來 |
@@ -80,6 +81,7 @@
 || import numpy as np ||
 || np.random.randint(low, high=None, size=None, dtype=int) | 在某個區間值，選擇需要 size 的隨機值|
 || np.arange(`start`,`stop`,`step`)| start預設0，可以省略；所有數字會形成一個list|
+|| np.sort(`list`)|排序|
 <br/>
 
 ## 4. 繪圖 參考寫法
