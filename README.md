@@ -42,7 +42,7 @@
 | 增減與排列 | del `DataFrame`[`欄名稱`]| 刪除欄，這裡不能使用df.col格式|
 || drop([columns1, columns2], axis = 1) | 刪除欄(可一次多個)|
 || [`欄名稱`] | 選取欄，如果沒有該欄則會新增欄|
-|| pd.caoncat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併，1為左右合併|
+|| pd.concat([`df1`,`df2`], axis = 0)| 合併dataframe，0為上下合併，1為左右合併|
 || `df`=`df`[[col1,col2,col3]] | 指定欄位順序 |
 || `df`.columns= [col1,col2,col3] | 指定欄位名稱(取代原本名稱)|
 || `df`= `df`.set_index(`col`)| 指定某欄為index(col不會保留)|
