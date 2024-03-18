@@ -10,6 +10,7 @@
 | 提交版本(給本地數據庫) | git commit -m "`備註說明`" ||
 | 上傳遠端數據庫 | git push ||
 | 下載遠端數據庫 | git pull||
+[參考文章](<https://ithelp.ithome.com.tw/m/articles/10339890>)
 <br/>
 
 ## 2. Pandas 參考寫法
